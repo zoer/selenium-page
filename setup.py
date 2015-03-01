@@ -1,29 +1,29 @@
-#!/usr/bin/env python
-
 import os.path
 
 from setuptools import setup, find_packages
-import selenium_page as sp
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-requires = ['selenium >= 2.28']
+requires = ['selenium>=2.28']
 
+_author='Oleg Yashcuk'
+_email='oazoer@gmail.com'
+_url='https://github.com/zoer/selenium-page'
 setup(
     name='selenium-page',
-    version=sp.__version__,
-    author=sp.__author__,
-    author_email=sp.__email__,
-    maintainer=sp.__maintainer__,
-    maintainer_email=sp.__email__,
-    url=sp.__url__,
-    download_url=sp.__url__,
+    version='0.0.1',
+    author=_author,
+    author_email=_email,
+    maintainer=_author,
+    maintainer_email=_email,
+    url=_url,
+    download_url=_url,
 
-    description=sp.__summary__,
+    description='Selenium Page library',
     long_description = read('README.md'),
 
-    license=sp.__license__,
+    license='MIT',
     packages=find_packages(),
 
     install_requires=requires,
