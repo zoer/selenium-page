@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.4"
+  - "3.3"
+install:
+  - pip install -e . --use-mirrors
+script:
+  - python setup.py test
+notifications:
+  email:
+    - oazoer@gmail.com

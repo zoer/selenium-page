@@ -1,0 +1,16 @@
+*.egg-info
+/build
+/dist
+__pycache__
+*.pyc
+*.bundle
+*.orig
+*.*~
+*.log
+*.pid
+*.iml
+log.txt
+*.coverage
+*.dat
+*.out
+.sw[a-z]
